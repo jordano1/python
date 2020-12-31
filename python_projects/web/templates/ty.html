@@ -13,7 +13,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./static/assets/images/favicon.ico" rel="icon">
+  <link href="../static/assets/images/favicon.ico" rel="icon">
 
   <title>Thank you!</title>  
 
@@ -56,9 +56,13 @@
 
 
 <footer class="footer-container text-center">
-    {% include 'footer.html' %}
-    {% block content %}
-    {% endblock %}
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© jordanodesign | {{now.year}}</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script>
